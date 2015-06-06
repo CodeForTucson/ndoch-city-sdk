@@ -4,7 +4,7 @@ Welcome to the Code for Tucson battalion's repo for the [City SDK Project](http:
 # Resources
 - [City SDK Challenge](http://hackforchange.org/challenges/citysdk/)
 - [City SDK Repo](http://uscensusbureau.github.io/citysdk/)
-- [Tucson, AZ Data Sources]()
+- [Tucson, AZ Data Sources](http://data.tucsonaz.gov/)
 - [Trello](https://trello.com/b/ELhLYvjL/city-sdk)
 
 # Project Maintainers
