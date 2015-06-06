@@ -1,4 +1,4 @@
-# Code for Tucson - NDOCH - City SDK Project
+# City SDK Project
 Welcome to the Code for Tucson battalion's repo for the [City SDK Project](http://uscensusbureau.github.io/citysdk/), created for the _National Day of Civic Hacking (NDOCH)_.
 
 # Resources
