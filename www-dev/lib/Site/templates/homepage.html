@@ -1,0 +1,45 @@
+<script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbbiTD_OwFnWN1nWMgd4ScvG0sQeWostg">
+</script>
+<script type="text/javascript">
+  function initialize() {
+    var mapOptions = {
+      center: { lat: 32.222980, lng: -110.970824},
+      zoom: 13,
+      disableDefaultUI: true
+    };
+    var map = new google.maps.Map(document.getElementById('map-canvas'),
+        mapOptions);
+    // Load center
+    var coords = map.getCenter();
+        coords = 'lat='+coords.lat()+'&lng='+coords.lng();
+    var request = new XMLHttpRequest();
+        request.open('POST', '/api/?farmers', true);
+        request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        request.setRequestHeader("Content-length", coords.length);
+        request.onload = function() {
+          if (request.status >= 200 && request.status < 400) {
+            // Success!
+            var resp = request.responseText;
+            createMarkers(resp);
+          } else {
+            // We reached our target server, but it returned an error
+
+          }
+        };
+
+        request.onerror = function() {
+          // There was a connection error of some sort
+        };
+
+        request.send(coords);
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+  function createMarkers(dataset){
+    dataset = JSON.parse(dataset);
+    for(i in dataset){
+      alert(dataset[i].name+'\n'+datasetp[i].address);
+    }
+  }
+</script>
+<div id="map-canvas" class="map-canvas"></div>

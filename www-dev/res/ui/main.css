@@ -1,0 +1,104 @@
+/**
+ *  Open Tucson
+ *  MIT License
+ */
+/**
+ *  Essentials
+ */
+body {
+    color: #999;
+    background-color: #eee;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.row { overflow: hidden; }
+.hidden { display: none; }
+.left { float: left; }
+.right { float: right; }
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after { clear: both; }
+.wrapper {
+    margin: 0 auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+/**
+ *  Header Styles
+ */
+header {
+    height: 3rem;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: rgba(0,0,0,0.2) 0 0 3px;
+    z-index: 10000;
+}
+.logo-text {
+    display: inline-block;
+    margin: 0 0.5rem;
+    vertical-align: top;
+    line-height: 3rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: rgba(0,0,0,0.9);
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+.betamark {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 0.25rem 0 0 0.1rem;
+  color: #f00;
+  opacity: 0.5;
+}
+.nav {
+    list-style: none;
+    margin: 0 0 0 1rem;
+    padding: 0;
+}
+.nav li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.nav li a {
+    display: block;
+    padding: 0 0.75rem;
+    margin: 0 0.25rem;
+    line-height: 3.35rem;
+    color: rgba(0,0,0,0.7);
+    font-weight: 300;
+    font-size: 1rem;
+    transition: color 0.2s ease-in-out;
+}
+.nav li a:hover { color: #333; }
+/**
+ *  Dashboard UI
+ */
+.body {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/**
+ *  Map
+ */
+.map-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
