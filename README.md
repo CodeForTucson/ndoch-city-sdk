@@ -22,7 +22,7 @@ Our next steps include:
 - [Trello](https://trello.com/b/ELhLYvjL/city-sdk)
 
 # Project Maintainers
-This project is led by Corey Bishop (@bishoco), and the repo is maintained by Andrew Slattery (@aslattery).
+This project is led by Andrew Slattery (@aslattery), with previous leadership by Corey Bishop (@bishoco).
 
 # License
 We are utilizing the MIT License for this project. For details, see the LICENSE file.
